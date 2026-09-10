@@ -1,4 +1,4 @@
-import "./css/BookCard.css";
+import "../css/BookCard.css";
 
 function BookCard({ book, onSelect }) {
   return (

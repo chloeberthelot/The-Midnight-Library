@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./css/SearchBooks.css";
+import "../css/SearchBooks.css";
 
 function SearchBooks({ addBook }) {
   const [query, setQuery] = useState("");

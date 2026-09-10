@@ -1,6 +1,6 @@
-import Library from "./Library";
-import AddBookForm from "./AddBookForm";
-import SearchBooks from "./SearchBooks";
+import Library from "./components/Library";
+import AddBookForm from "./components/AddBookForm";
+import SearchBooks from "./components/SearchBooks";
 import { useState } from "react";
 import "./css/App.css";
 import "./css/Style.css";

@@ -1,6 +1,6 @@
 import BookCard from "./BookCard";
 import { useState } from "react";
-import "./css/Library.css";
+import "../css/Library.css";
 
 function Library({ books }) {
   const [selectedBook, setSelectedBook] = useState(null);
