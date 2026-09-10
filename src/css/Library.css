@@ -1,0 +1,96 @@
+.library{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.genre-btn {
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(139, 21, 56);   /* bordeaux profond */    
+    padding: 5px 10px;
+    margin: 5px;
+    color: rgb(237, 233, 245);   /* blanc cassé légèrement violacé */
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;   /* police claire pour le texte courant */
+}
+.genre-btn:hover{
+    box-shadow: 0 6px 25px rgb(139, 21, 56);
+
+}
+
+.books-list {
+    display: grid;
+    gap: 20px;          /* espace entre les cartes */
+    padding: 20px;
+    margin: 10px;
+    width: 100%;         /* prend toute la largeur disponible du parent */
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);   /* fond noir semi-transparent */
+    display: flex;
+    align-items: center;       /* centre verticalement */
+    justify-content: center;   /* centre horizontalement */
+    z-index: 1000;               /* passe au-dessus de tout le reste */
+}
+
+.modal {
+    background-color: rgb(32, 26, 48);
+    padding: 24px;
+    border-radius: 12px;
+    max-width: 400px;
+    max-height: 80vh;
+    overflow-y: auto;   /* scroll si le résumé est trop long */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+/*position: fixed : détache l'élément du flux normal de la page — il ne se comporte plus comme un bloc empilé avec les autres éléments, il devient "flottant" par rapport à l'écran entier
+top: 0; left: 0; width: 100%; height: 100% : fait en sorte que l'overlay couvre tout l'écran, peu importe où on a scrollé
+z-index: 1000 : garantit qu'elle s'affiche par-dessus tout le reste (sans ça, elle pourrait être cachée derrière d'autres éléments)
+display: flex + align-items/justify-content: center sur l'overlay : centre la boîte modale (.modal) parfaitement au milieu de l'écran */
+
+.close-btn{
+    background-color: rgb(32, 26, 48);
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.close-btn:hover{
+    box-shadow: 0 6px 25px rgba(147, 51, 234, 0.4);
+}
+
+.summary {
+    white-space: pre-line;
+    text-align: justify;
+}
+
+.allgenre-btn{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(139, 21, 56);   /* bordeaux profond */    
+    padding: 5px 10px;
+    margin: 5px;
+    color: rgb(237, 233, 245);   /* blanc cassé légèrement violacé */
+    cursor: pointer;   
+    font-family: 'Inter', sans-serif;   /* police claire pour le texte courant */
+
+}
+
+.allgenre-btn:hover{
+    box-shadow: 0 6px 25px rgb(139, 21, 56);
+
+}

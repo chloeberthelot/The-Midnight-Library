@@ -1,0 +1,16 @@
+body{
+    padding: 10px;
+    background: linear-gradient(135deg, rgb(10, 8, 16) 0%, rgb(18, 12, 28) 100%);
+    min-height: 100vh;
+}
+
+h1{
+    color: rgb(237, 233, 245);   /* blanc cassé légèrement violacé */
+    font-family: 'Cinzel', serif;   /* police à l'allure "fantasy/gothique" */
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+}

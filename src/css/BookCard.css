@@ -1,0 +1,77 @@
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* centre le contenu horizontalement dans la carte */
+    width: 220px;             /* pour donner une taille fixe à chaque carte, optionnel */
+    gap: 4px;   /* espace uniforme entre TOUS les enfants directs (img, h3, chaque p) */
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: rgb(32, 26, 48);   /* violet foncé désaturé */
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(147, 51, 234, 0.2);
+    animation: fadeIn 0.4s ease-out;
+
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+.book-card:hover{
+    box-shadow: 0 6px 25px rgba(159, 158, 159, 0.4);
+}
+
+img{
+    width: 100%;
+    max-width: 260px;
+    height: 390px;         /* garde le ratio 2:3 */
+    object-fit: cover;
+}
+
+h3{
+    font-family: 'Cinzel', serif;   /* police à l'allure "fantasy/gothique" */
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;      /* autorise la coupure d'un mot trop long */
+    overflow-wrap: break-word;  /* équivalent moderne, à garder par sécurité */
+    text-overflow: ellipsis;   /* ajoute les "..." */
+    width: 100%;                /* nécessaire pour que ça fonctionne correctement */
+    margin: 0;   /* on retire quand même les marges par défaut, gap gère l'espacement */
+   color: rgb(237, 233, 245);   /* blanc cassé légèrement violacé */
+
+
+}
+h4{
+    font-family: 'Cinzel', serif;   /* police à l'allure "fantasy/gothique" */
+    font-size: 15px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    margin: 0;   /* on retire quand même les marges par défaut, gap gère l'espacement */
+    color: rgb(168, 158, 188);   /* gris-violet doux */
+}
+
+p{
+    font-family: 'Inter', sans-serif;   /* police claire pour le texte courant */
+    font-size: 15px;
+    margin: 0;   /* on retire quand même les marges par défaut, gap gère l'espacement */
+    color: rgb(168, 158, 188);   /* gris-violet doux */
+}
+
+.genre-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background-color: rgba(147, 51, 234, 0.2);
+    color: rgb(212, 175, 55);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
