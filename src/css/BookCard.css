@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,300;1,14..32,300&family=Manrope:wght@300&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .book-card {
     display: flex;
@@ -31,8 +32,11 @@ img{
 }
 
 h3{
-    font-family: 'Cinzel', serif;   /* police à l'allure "fantasy/gothique" */
-    font-size: 20px;
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;    
+  font-size: 18px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -47,8 +51,11 @@ h3{
 
 }
 h4{
-    font-family: 'Cinzel', serif;   /* police à l'allure "fantasy/gothique" */
-    font-size: 15px; 
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;    
+  font-size: 15px; 
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -58,8 +65,10 @@ h4{
 }
 
 p{
-    font-family: 'Inter', sans-serif;   /* police claire pour le texte courant */
-    font-size: 15px;
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;    font-size: 15px;
     margin: 0;   /* on retire quand même les marges par défaut, gap gère l'espacement */
     color: rgb(168, 158, 188);   /* gris-violet doux */
 }

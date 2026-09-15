@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,300;1,14..32,300&family=Manrope:wght@300&display=swap');
+
 body{
     padding: 10px;
     background: linear-gradient(135deg, rgb(10, 8, 16) 0%, rgb(18, 12, 28) 100%);
@@ -6,11 +8,14 @@ body{
 
 h1{
     color: rgb(237, 233, 245);   /* blanc cassé légèrement violacé */
-    font-family: 'Cinzel', serif;   /* police à l'allure "fantasy/gothique" */
-    font-size: 30px;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 45px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    cursor: default;
 }
+

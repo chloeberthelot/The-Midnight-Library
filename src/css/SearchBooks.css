@@ -57,3 +57,6 @@
     padding: 6px 16px;
     cursor: pointer;
 }
+.add-btn:hover{
+    box-shadow: 0 6px 25px rgb(139, 21, 56);
+}

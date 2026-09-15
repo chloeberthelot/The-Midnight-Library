@@ -17,7 +17,7 @@ function SearchBooks({ addBook }) {
   }
   function handleAdd(book) {
     const newBook = {
-      id: Date.now(),
+      id: crypto.randomUUID(),
       title: book.title,
       author: book.author_name?.[0] || "Unknown author",
       genre: "Unknown genre",

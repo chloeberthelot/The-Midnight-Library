@@ -8,7 +8,8 @@
     margin: 5px;
     color: rgb(237, 233, 245);   /* blanc cassé légèrement violacé */
     cursor: pointer;
-    background-color: rgb(139, 21, 56);   /* bordeaux profond */}
+    background-color: rgb(139, 21, 56);   /* bordeaux profond */
+}
 
 .submit-btn:hover{
     box-shadow: 0 6px 25px rgb(139, 21, 56);
