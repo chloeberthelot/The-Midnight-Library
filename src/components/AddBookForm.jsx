@@ -13,7 +13,7 @@ function AddBookForm({ addBook }) {
     e.preventDefault();
 
     const newBook = {
-      id: Date.now(),
+      id: crypto.randomUUID(),
       title: title,
       cover: cover,
       author: author,
