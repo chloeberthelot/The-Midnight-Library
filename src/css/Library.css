@@ -8,7 +8,7 @@
     border: none;
     border-radius: 5px;
     background-color: rgb(139, 21, 56);   /* bordeaux profond */    
-    padding: 5px 10px;
+    padding: 6px 16px;
     margin: 5px;
     color: rgb(237, 233, 245);   /* blanc cassé légèrement violacé */
     cursor: pointer;
@@ -82,7 +82,7 @@ display: flex + align-items/justify-content: center sur l'overlay : centre la bo
     border: none;
     border-radius: 5px;
     background-color: rgb(139, 21, 56);   /* bordeaux profond */    
-    padding: 5px 10px;
+    padding: 6px 16px;
     margin: 5px;
     color: rgb(237, 233, 245);   /* blanc cassé légèrement violacé */
     cursor: pointer;   
