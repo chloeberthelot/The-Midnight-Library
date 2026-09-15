@@ -4,7 +4,6 @@
     align-items: center;
     border: none;
     border-radius: 5px;
-    background-color: rgb(177, 177, 177);
     padding: 6px 16px;
     margin: 5px;
     color: rgb(237, 233, 245);   /* blanc cassé légèrement violacé */
@@ -14,7 +13,7 @@
 .submit-btn:hover{
     box-shadow: 0 6px 25px rgb(139, 21, 56);
 }
-input{
+input, select{
     border-radius: 8px;
 }
 

@@ -92,10 +92,14 @@ function App() {
     setBooks((prev) => [...prev, newBook]);
   };
 
+  const deleteBook = (id) => {
+    setBooks((prev) => prev.filter((book) => book.id !== id));
+  };
+
   return (
     <div>
       <SearchBooks addBook={addBook} />
-      <Library books={books} />
+      <Library books={books} onDelete={deleteBook} />
       <AddBookForm addBook={addBook} />
     </div>
   );

@@ -2,7 +2,7 @@ import BookCard from "./BookCard";
 import { useState } from "react";
 import "../css/Library.css";
 
-function Library({ books }) {
+function Library({ books, onDelete }) {
   const [selectedBook, setSelectedBook] = useState(null);
 
   const [selectedGenre, setSelectedGenre] = useState("");
@@ -41,6 +41,7 @@ function Library({ books }) {
             book={book}
             key={book.id}
             onSelect={() => setSelectedBook(book)}
+            onDelete={onDelete}
           />
         ))}
       </div>

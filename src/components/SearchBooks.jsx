@@ -50,7 +50,7 @@ function SearchBooks({ addBook }) {
             />
             <h3>{book.title}</h3>
             <h4>{book.author_name?.[0] || "Auteur inconnu"}</h4>
-            <button className="add-btn" onCLick={() => handleAdd(book)}>
+            <button className="add-btn" onClick={() => handleAdd(book)}>
               Add to library
             </button>
             {/* 

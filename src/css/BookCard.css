@@ -75,3 +75,28 @@ p{
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
+
+.delete-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 16px;
+    margin: 5px;
+    color: rgb(237, 233, 245);   /* blanc cassé légèrement violacé */
+    cursor: pointer;
+    background-color: rgb(139, 21, 56);   /* bordeaux profond */
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+
+.delete-btn:hover{
+    box-shadow: 0 6px 25px rgb(139, 21, 56);
+
+}
+
+.book-card:hover .delete-btn {
+    opacity: 1;
+}

@@ -1,16 +1,62 @@
-# React + Vite
+# The Midnight Library
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Une application React pour gérer sa bibliothèque Fantasy/ Thriller personnelle : rechercher des livres via l'API Open Library, les ajouter à sa collection, les noter, les organiser par genre, et les supprimer. Les données sont sauvegardées dans le `localStorage` du navigateur.
 
-Currently, two official plugins are available:
+## Démo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[the-midnight-library-rho.vercel.app](https://the-midnight-library-rho.vercel.app)
 
-## React Compiler
+## Capture d'écran
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![aperçu](src/CaptureProjet.png)
 
-## Expanding the ESLint configuration
+## Fonctionnalités
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Recherche de livres** via l'API [Open Library](https://openlibrary.org/developers/api), avec ajout direct à la bibliothèque
+- **Ajout manuel** d'un livre (titre, auteur, genre, note, image de couverture via URL, résumé) avec validation des champs obligatoires
+- **Suppression** d'un livre, avec confirmation avant suppression
+- **Filtrage par genre**
+- **Fiche détaillée** d'un livre dans une fenêtre modale (résumé, couverture, auteur)
+- **Persistance des données** entre les sessions grâce à `localStorage`
+
+## Stack technique
+
+- [React](https://react.dev/) 19
+- [Vite](https://vite.dev/) — build tool et serveur de dev
+- CSS pur (pas de framework)
+- [Open Library API](https://openlibrary.org/developers/api) pour la recherche de livres
+
+## Installation
+
+```bash
+git clone https://github.com/chloeberthelot/The-Midnight-Library.git
+cd The-Midnight-Library
+npm install
+```
+
+## Lancer le projet en local
+
+```bash
+npm run dev
+```
+
+L'application est ensuite disponible sur [http://localhost:5173](http://localhost:5173).
+
+## Autres commandes disponibles
+
+```bash
+npm run build      # build de production
+npm run preview    # prévisualiser le build de production
+npm run lint        # vérifier le code avec ESLint
+```
+
+## Pistes d'amélioration
+
+- Édition d'un livre déjà ajouté à la bibliothèque
+- Système de favoris
+- Tri (par note, par titre, par date d'ajout...)
+- Tests automatisés
+
+## Auteur
+
+Chloé Berthelot

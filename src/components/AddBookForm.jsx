@@ -39,25 +39,29 @@ function AddBookForm({ addBook }) {
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         placeholder="Title of the book"
+        required
       />
       <input
         type="url"
         value={cover}
         onChange={(e) => setCover(e.target.value)}
         placeholder="URL Image"
+        required
       />
       <input
         type="text"
         value={author}
         onChange={(e) => setAuthor(e.target.value)}
         placeholder="Author"
+        required
       />
-      <input
-        type="text"
-        value={genre}
-        onChange={(e) => setGenre(e.target.value)}
-        placeholder="Genre"
-      />
+      <select value={genre} onChange={(e) => setGenre(e.target.value)} required>
+        <option value="" disabled hidden>
+          Select genre
+        </option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Thriller">Thriller</option>
+      </select>
       <input
         type="number"
         value={rating}
@@ -73,6 +77,7 @@ function AddBookForm({ addBook }) {
         value={summary}
         onChange={(e) => setSummary(e.target.value)}
         placeholder="Summary"
+        required
       />
       <button className="submit-btn" type="submit">
         Add new book
