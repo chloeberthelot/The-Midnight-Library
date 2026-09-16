@@ -98,6 +98,7 @@ function App() {
 
   return (
     <div>
+      <h1>The Midnight Library</h1>
       <SearchBooks addBook={addBook} />
       <Library books={books} onDelete={deleteBook} />
       <AddBookForm addBook={addBook} />
